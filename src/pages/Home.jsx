@@ -3,34 +3,37 @@ import CTASection from '../components/CTASection'
 
 const reasons = [
   {
-    title: 'Trusted expertise',
-    text: 'Advanced study in life science, business, and data analytics combined with real-world technology leadership.',
+    title: 'Calm, step-by-step explanations',
+    text: 'Students get practical help that slows the problem down, rebuilds missing foundations, and turns confusion into a clear next step.',
   },
   {
-    title: 'Personal mentorship',
-    text: 'One-on-one guidance that supports confidence, curiosity, and steady progress.',
+    title: 'Strong academic and real-world background',
+    text: 'Chris brings a BSc in Life Science, an MBA, and graduate work in cybersecurity and data analytics into tutoring that connects ideas to real life.',
   },
   {
-    title: 'Family-friendly support',
-    text: 'Clear communication and practical tutoring that makes schoolwork feel manageable.',
+    title: 'Support for students and parents',
+    text: 'Families get clear communication, realistic goals, and tutoring that helps students feel more capable between sessions.',
   },
 ]
 
-const credentials = ['BSc Life Science', 'MBA', 'Master’s in Cybersecurity & Data Analytics', 'Tech executive', 'STEM mentor']
-const subjects = ['Mathematics', 'Biology', 'Chemistry', 'Physics', 'Study Skills']
+const credentials = ['BSc Life Science', 'MBA', 'Master’s in Cybersecurity & Data Analytics', 'Technology leadership', 'STEM mentorship']
+const subjects = ['Math', 'Biology', 'Chemistry', 'Physics', 'Computer Science', 'Study Skills']
 
 function Home() {
   return (
     <div className="page-layout">
       <PageHero
-        title="Home"
-        subtitle="Premium STEM tutoring with trust, experience, and personal connection"
-        description="Supporting students in Grades 8-12 and early university with focused math, science, and study skills tutoring."
+        title="STEM tutoring that turns confusion into confidence."
+        subtitle="Math, science, computer science, and study skills support for high school and early university students."
+        description="Learn STEM With Chris helps students understand the ideas behind the homework, prepare for tests, and build the confidence to solve problems on their own."
         illustration="Photo"
       />
       <section className="content-block split-block">
         <div>
-          <h2>Why families choose Chris</h2>
+          <h2>For students who are capable, but stuck</h2>
+          <p>
+            Many students do not need more pressure. They need someone who can explain the concept in a different way, find the missing step, and help them practice until the subject starts to make sense.
+          </p>
           <div className="feature-grid">
             {reasons.map((item) => (
               <article key={item.title} className="feature-card">
@@ -41,7 +44,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="credentials-strip">
+      <section className="credentials-strip" aria-label="Chris's credentials and experience">
         {credentials.map((item) => (
           <span key={item} className="credential-pill">
             {item}
@@ -49,19 +52,19 @@ function Home() {
         ))}
       </section>
       <section className="content-block">
-        <h2>Featured subjects</h2>
+        <h2>Core tutoring areas</h2>
         <div className="subject-grid">
           {subjects.map((subject) => (
             <article key={subject} className="subject-card">
               <h3>{subject}</h3>
-              <p>Support for common struggles, clear explanations, and practical practice to build confidence.</p>
+              <p>Clear explanations, guided practice, and practical strategies for assignments, tests, and long-term understanding.</p>
             </article>
           ))}
         </div>
       </section>
       <CTASection
-        title="Ready to start with a free consultation?"
-        description="Reach out today to discuss your student’s goals and find the right tutoring path."
+        title="Start with a free consultation"
+        description="Tell me where the student is stuck, what course they are taking, and what kind of support would help most."
         buttonText="Book a consultation"
         buttonLink="/contact"
       />
