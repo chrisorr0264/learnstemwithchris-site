@@ -1,0 +1,328 @@
+.home-v2 {
+  display: grid;
+  gap: 3rem;
+}
+
+.v2-hero {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.88fr);
+  gap: 2rem;
+  align-items: center;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  border-radius: 36px;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(6, 182, 212, 0.22), transparent 26%),
+    radial-gradient(circle at 82% 18%, rgba(37, 99, 235, 0.18), transparent 28%),
+    linear-gradient(135deg, #ffffff 0%, #f8fbff 48%, #eef8ff 100%);
+  border: 1px solid rgba(6, 182, 212, 0.16);
+  box-shadow: 0 30px 90px rgba(11, 31, 58, 0.1);
+}
+
+.v2-hero::after {
+  content: '∑  ∆  λ  f(x)  H₂O  1010';
+  position: absolute;
+  right: 2rem;
+  bottom: 1.5rem;
+  font-size: clamp(1.5rem, 4vw, 3.8rem);
+  letter-spacing: 0.3em;
+  color: rgba(37, 99, 235, 0.08);
+  pointer-events: none;
+}
+
+.v2-hero-copy,
+.v2-learning-card,
+.v2-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.v2-eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--secondary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.v2-hero h1,
+.v2-section h2 {
+  margin: 0;
+  color: var(--text-h);
+  line-height: 1.02;
+}
+
+.v2-hero h1 {
+  max-width: 760px;
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  letter-spacing: -0.06em;
+}
+
+.v2-lede {
+  max-width: 650px;
+  margin: 1.35rem 0 0;
+  color: var(--text);
+  font-size: clamp(1.08rem, 1.7vw, 1.35rem);
+}
+
+.v2-belief {
+  margin: 1rem 0 0;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.v2-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button-secondary {
+  color: var(--primary);
+  background: #ffffff;
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  box-shadow: 0 14px 32px rgba(11, 31, 58, 0.08);
+}
+
+.v2-learning-card {
+  min-height: 430px;
+  padding: 1.5rem;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 28px 70px rgba(11, 31, 58, 0.12);
+  backdrop-filter: blur(18px);
+  display: grid;
+  align-content: space-between;
+  gap: 1.5rem;
+}
+
+.v2-card-topline {
+  width: fit-content;
+  padding: 0.55rem 0.8rem;
+  border-radius: 999px;
+  color: var(--primary);
+  background: rgba(6, 182, 212, 0.12);
+  font-weight: 800;
+}
+
+.v2-equation {
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  font-weight: 900;
+  color: var(--primary);
+  letter-spacing: -0.04em;
+}
+
+.v2-sketch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.v2-sketch-grid span,
+.v2-resource-cloud span,
+.v2-credentials span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.v2-confidence-meter {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.v2-confidence-meter div {
+  height: 0.7rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(11, 31, 58, 0.08);
+}
+
+.v2-confidence-meter strong {
+  display: block;
+  width: 76%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #2563EB, #06B6D4);
+}
+
+.v2-section {
+  display: grid;
+  gap: 1.5rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(6, 182, 212, 0.12);
+  box-shadow: 0 22px 60px rgba(11, 31, 58, 0.06);
+}
+
+.v2-section-intro {
+  max-width: 780px;
+}
+
+.v2-section h2 {
+  font-size: clamp(2.1rem, 4vw, 3.6rem);
+  letter-spacing: -0.045em;
+}
+
+.v2-section p {
+  color: var(--text);
+}
+
+.v2-pain-grid,
+.v2-principle-grid,
+.v2-subject-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.v2-pain-grid,
+.v2-principle-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.v2-pain-card,
+.v2-principle-card,
+.v2-subject-card {
+  padding: 1.5rem;
+  border-radius: 26px;
+  background: #ffffff;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  box-shadow: 0 16px 40px rgba(11, 31, 58, 0.05);
+}
+
+.v2-pain-card span {
+  display: block;
+  height: 2.3rem;
+  color: var(--accent);
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 0.8;
+}
+
+.v2-pain-card p,
+.v2-principle-card p,
+.v2-subject-card p {
+  margin-bottom: 0;
+}
+
+.v2-principle-card h3,
+.v2-subject-card h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.v2-philosophy,
+.v2-chris-section,
+.v2-steps-section,
+.v2-resources-section {
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  align-items: center;
+}
+
+.v2-photo-placeholder {
+  min-height: 430px;
+  display: grid;
+  place-items: center;
+  border-radius: 32px;
+  background:
+    linear-gradient(135deg, rgba(6, 182, 212, 0.18), rgba(37, 99, 235, 0.08)),
+    #ffffff;
+  border: 1px dashed rgba(37, 99, 235, 0.28);
+  color: var(--secondary);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.v2-credentials,
+.v2-resource-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.v2-subject-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.v2-step-list {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.v2-step-list li {
+  counter-increment: step;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(6, 182, 212, 0.14);
+  font-weight: 800;
+}
+
+.v2-step-list li::before {
+  content: counter(step);
+  display: grid;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  color: #ffffff;
+  background: var(--secondary);
+}
+
+@media (max-width: 980px) {
+  .v2-hero,
+  .v2-philosophy,
+  .v2-chris-section,
+  .v2-steps-section,
+  .v2-resources-section,
+  .v2-pain-grid,
+  .v2-principle-grid,
+  .v2-subject-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .v2-learning-card {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 640px) {
+  .v2-hero,
+  .v2-section {
+    padding: 1.35rem;
+    border-radius: 24px;
+  }
+
+  .v2-hero h1 {
+    font-size: clamp(2.6rem, 13vw, 4rem);
+  }
+
+  .v2-confidence-meter {
+    grid-template-columns: 1fr;
+  }
+}
