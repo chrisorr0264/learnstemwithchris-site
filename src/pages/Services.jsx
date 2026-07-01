@@ -3,20 +3,28 @@ import CTASection from '../components/CTASection'
 
 const services = [
   {
-    title: 'Homework Help',
-    details: 'Guidance for assignments, review of concepts, and help with challenging problems.',
+    title: 'Homework and assignment support',
+    details: 'Work through current course material while learning the reasoning behind each step, not just getting to the answer.',
   },
   {
-    title: 'Ongoing Tutoring',
-    details: 'Regular sessions that build consistent STEM skills, confidence, and academic momentum.',
+    title: 'Ongoing weekly tutoring',
+    details: 'Build steady progress with regular sessions, targeted practice, and a plan that adapts as the student improves.',
   },
   {
-    title: 'Exam Preparation',
-    details: 'Focused review, test strategies, and practice tailored to school and standardized exams.',
+    title: 'Test and exam preparation',
+    details: 'Review key concepts, identify weak spots, practice representative questions, and develop calmer test-taking routines.',
   },
   {
-    title: 'STEM Enrichment',
-    details: 'Deeper exploration of projects, real-world applications, and advanced problem solving.',
+    title: 'Foundation rebuilding',
+    details: 'Go back to the missing building blocks in math or science so new material stops feeling impossible.',
+  },
+  {
+    title: 'STEM enrichment',
+    details: 'Explore advanced questions, projects, coding, data, and real-world applications for curious students who want more.',
+  },
+  {
+    title: 'Study skills and learning strategy',
+    details: 'Improve note-taking, problem setup, review habits, time management, and confidence between tutoring sessions.',
   },
 ]
 
@@ -24,9 +32,9 @@ function Services() {
   return (
     <div className="page-layout">
       <PageHero
-        title="Services"
-        subtitle="Tutoring options designed for support, progress, and confidence"
-        description="Choose the service that best matches your student’s current goals and learning needs."
+        title="Tutoring services"
+        subtitle="Flexible support for homework, tests, confidence, and deeper understanding."
+        description="Whether the student needs urgent help before a test or steady support through a course, tutoring is built around their current material and learning style."
         illustration="Photo"
       />
       <section className="content-block">
@@ -39,9 +47,18 @@ function Services() {
           ))}
         </div>
       </section>
+      <section className="content-block">
+        <h2>How sessions work</h2>
+        <p>
+          We start by identifying the student’s immediate challenge, then build a simple plan: what to understand first, what to practice next, and how to know when the concept is becoming reliable.
+        </p>
+        <p>
+          Sessions can focus on a current assignment, a test coming up soon, or a longer-term goal such as rebuilding confidence in math or preparing for university-level STEM courses.
+        </p>
+      </section>
       <CTASection
-        title="Need a tutoring plan that fits your family?"
-        description="Get in touch for a consultation and a tutoring approach built around your student’s needs."
+        title="Need a tutoring plan that fits your student?"
+        description="Send a quick note about the course, the current challenge, and what you hope tutoring will change."
         buttonText="Book a consultation"
         buttonLink="/contact"
       />
