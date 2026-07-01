@@ -6,7 +6,7 @@ function About() {
     <div className="page-layout">
       <PageHero
         title="About Chris"
-        subtitle="A practical STEM mentor with academic depth, business experience, and a calm teaching style."
+        subtitle="A practical STEM mentor with academic depth, broad professional experience, and a calm teaching style."
         description="I help students make sense of difficult ideas by breaking problems into clear steps, connecting concepts to real life, and building confidence through practice."
         illustration="Photo"
       />
@@ -17,16 +17,16 @@ function About() {
             I have always loved the moment when a difficult idea finally clicks. Good tutoring is not about doing the work for the student. It is about helping them understand what the problem is asking, what tools they already have, and how to move forward with confidence.
           </p>
           <p>
-            My background combines science, business, technology, cybersecurity, and data analysis. That mix lets me teach STEM as a connected way of thinking rather than a pile of formulas to memorize.
+            My background spans science, business, law, healthcare, mathematics, physics, computer science, technology, and education. That breadth lets me teach STEM as a connected way of thinking rather than a pile of formulas to memorize.
           </p>
           <div className="detail-list">
             <div>
-              <strong>Education</strong>
-              <p>BSc Life Science, MBA, and Master’s-level study in Cybersecurity & Data Analytics.</p>
+              <strong>Education and training</strong>
+              <p>BSc in Life Sciences, MBA, Post-Graduate Certificate in Law, College Diploma in Paramedicine, and formal training in Mathematics and Physics.</p>
             </div>
             <div>
               <strong>Experience</strong>
-              <p>Technology leadership, entrepreneurship, analytical problem solving, and years of mentoring learners through complex topics.</p>
+              <p>Computer Science educator, technology leader, entrepreneur, analytical problem solver, and mentor for learners working through complex topics.</p>
             </div>
             <div>
               <strong>Teaching style</strong>
